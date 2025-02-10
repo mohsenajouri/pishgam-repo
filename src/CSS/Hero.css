@@ -1,0 +1,39 @@
+.hero {
+  width: 95%;
+  margin: 30px auto;
+  display: flex;
+  .row-equal-height {
+    display: flex;
+    align-items: stretch;
+  }
+  @media (max-width: 768px) {
+    .row-equal-height {
+      flex-direction: column-reverse; /* ترتیب ستون‌ها را معکوس می‌کند */
+    }
+
+    .row-equal-height > div {
+      margin-bottom: 20px; /* فاصله بین بخش‌ها */
+    }
+  }
+
+  .row-equal-height > figure {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row-equal-height img {
+    object-fit: cover;
+    height: 100%;
+  }
+  .HeroText {
+    background-color: #3d8da8;
+    color: red;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .IntroductionText {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+

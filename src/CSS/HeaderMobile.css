@@ -1,0 +1,134 @@
+.headerMobile {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 0 5px black;
+  background-color: #3d8da8;
+  color: white;
+  z-index: 1001;
+
+  .menu-toggle {
+    position: sticky !important;
+    top: 16px;
+    right: 16px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .menu-toggle svg {
+    width: 24px;
+    height: 24px;
+  }
+  .CloseMenuWrapper {
+    padding: 10px;
+    align-self: center;
+    .close-menu {
+      width: 20px;
+      color: #fff;
+      cursor: pointer;
+      display: block;
+      justify-content: center;
+      div {
+        text-align: end;
+        i {
+          background-color: gray;
+          padding: 10px;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 320px;
+    height: 100%;
+    overflow: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    background-color: rgba(255, 255, 255, 0.5); /* شفافیت برای تأثیر بهتر */
+
+    backdrop-filter: blur(15px); /* میزان بلر */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 999;
+  }
+
+  .mobile-menu.open {
+    transform: translateX(0);
+  }
+
+  .mobile-menu ul {
+    width: 100%;
+    list-style: none;
+    color: white;
+  }
+
+  .mobile-menu li {
+    margin-bottom: 15px;
+    color: white;
+  }
+
+  .mobile-menu button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: right;
+    font-size: 16px;
+    cursor: pointer;
+    color: #333;
+  }
+
+  .mobile-menu .submenu {
+    display: none;
+    margin-top: 10px;
+    background-color: #6dbad4;
+    border-radius: 10px;
+  }
+
+  .mobile-menu .submenu.open {
+    display: block;
+    padding: 10px;
+  }
+
+  @media (min-width: 1000px) {
+    .mobile-menu {
+      display: none;
+    }
+
+    .menu-toggle {
+      display: none;
+    }
+  }
+}
+.MenuUl {
+  padding: 10px;
+  border-radius: 10px;
+}
+.menu-item {
+  color: white !important;
+  padding: 10px;
+  background-color: #3d8da8 !important;
+  border-radius: 10px;
+}
+.submenu__items {
+  background-color: #6a9dac;
+  padding: 5px;
+  border-radius: 10px;
+}

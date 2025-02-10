@@ -1,0 +1,11 @@
+.table {
+  direction: ltr;
+  border: 1px solid black;
+}
+.tableColor {
+  background-color: #eef2f2 !important;
+}
+td,
+th {
+  border: none !important;
+}

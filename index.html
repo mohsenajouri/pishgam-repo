@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="مسباره چیست؟ آشنایی با انواع مسباره مات و براق، مشخصات فنی، آنالیز شیمیایی و کاربردهای صنعتی. مقایسه مسباره با گارنت، مزایا و معایب، قیمت و روش‌های استفاده. اطلاعات کامل درباره مسباره را اینجا بخوانید."
+    />
+
+    <link rel="icon" type="image/x-icon" href="./Imagess/favicon.ico" />
+    <title>پیشگام ساینده پارس</title>
+    <link rel="stylesheet" href="./src/CSS/main.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+  </head>
+
+  <body>
+    <header class="headerMobile">
+      <button class="menu-toggle" id="menuToggle">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          />
+        </svg>
+      </button>
+      <a href="#">
+        <img src="./Imagess/Logo.jpg" alt="Logo" width="45" class="rounded-5" />
+      </a>
+
+      <nav class="mobile-menu" id="mobileMenu">
+        <div class="CloseMenuWrapper">
+          <button class="close-menu" id="closeMenu">
+            <div><i class="ri-close-fill"></i></div>
+          </button>
+        </div>
+
+        <ul class="MenuUl">
+          <li class="menu-item">
+            <a href="./index.html" class="text-white d-block w-100"
+              >صفحه اصلی
+            </a>
+          </li>
+          <li>
+            <button class="menu-item" onclick="toggleSubmenu(this)">
+              محصولات <span>+</span>
+            </button>
+            <ul class="submenu">
+              <li>
+                <button class="menu-item" onclick="toggleSubmenu(this)">
+                  مسباره مات
+                  <span>+</span>
+                </button>
+                <ul class="submenu">
+                  <li class="submenu__items">
+                    <a href="#" class="w-100 d-block"
+                      >دانه بندی و بسته بندی مسباره مات
+                    </a>
+                  </li>
+                  <li class="submenu__items">
+                    <a href="#" class="w-100 d-block"
+                      >آنالیز و مشخصات فنی مسباره مات
+                    </a>
+                  </li>
+                  <li class="submenu__items">
+                    <a href="#" class="w-100 d-block"
+                      >آنالیز و مشخصات فنی مسباره مات
+                    </a>
+                  </li>
+                  <li class="submenu__items">
+                    <a href="#" class="w-100 d-block"
+                      >آنالیز و مشخصات فنی مسباره مات
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <button class="menu-item" onclick="toggleSubmenu(this)">
+                  مسباره براق
+                  <span>+</span>
+                </button>
+                <ul class="submenu">
+                  <li class="submenu__items">
+                    <a href="#" class="w-100 d-block"
+                      >دانه بندی و بسته بندی مسباره براق
+                    </a>
+                  </li>
+                  <li class="submenu__items">
+                    <a href="#" class="w-100 d-block"
+                      >آنالیز و مشخصات فنی مسباره براق
+                    </a>
+                  </li>
+                  <li class="submenu__items">
+                    <a href="#" class="w-100 d-block"
+                      >آنالیز و مشخصات فنی مسباره براق
+                    </a>
+                  </li>
+                  <li class="submenu__items">
+                    <a href="#" class="w-100 d-block"
+                      >آنالیز و مشخصات فنی مسباره براق
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <button class="menu-item" onclick="toggleSubmenu(this)">
+                  گارنت قرمز
+                  <span>+</span>
+                </button>
+                <ul class="submenu">
+                  <li class="submenu__items">
+                    <a href="#" class="w-100 d-block"
+                      >دانه بندی و بسته بندی گارنت قرمز
+                    </a>
+                  </li>
+                  <li class="submenu__items">
+                    <a href="#" class="w-100 d-block"
+                      >آنالیز و مشخصات فنی گارنت قرمز
+                    </a>
+                  </li>
+                  <li class="submenu__items">
+                    <a href="#" class="w-100 d-block"
+                      >آنالیز و مشخصات فنی گارنت قرمز
+                    </a>
+                  </li>
+                  <li class="submenu__items">
+                    <a href="#" class="w-100 d-block"
+                      >آنالیز و مشخصات فنی گارنت قرمز
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item"><a href="#">سیلیس</a></li>
+            </ul>
+          </li>
+          <li>
+            <button class="menu-item" onclick="toggleSubmenu(this)">
+              مقالات و استاندارد ها
+              <span>+</span>
+            </button>
+            <ul class="submenu">
+              <li>
+                <a href="#" class="w-100 d-block">مزایای کلی مسیاره </a>
+              </li>
+              <li>
+                <a href="#" class="w-100 d-block">مشخصات فنی مسباره</a>
+              </li>
+              <li>
+                <a href="#" class="w-100 d-block">مشخصات مسباره </a>
+              </li>
+              <li>
+                <a href="#" class="w-100 d-block">آنالیز مسباره </a>
+              </li>
+              <li>
+                <a href="#" class="w-100 d-block">ایمنی و محیط زیست </a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="text-white d-block w-100">فروشگاه </a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="text-white d-block w-100">گالری تصاویر </a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="text-white d-block w-100">تماس با ما </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <header class="headerDesktop">
+      <nav class="navDesktop">
+        <div class="nav__data">
+          <a href="./index.html" class="nav__logo">
+            <img
+              src="./Imagess/Logo.jpg"
+              alt="Logo"
+              width="50"
+              class="Logo rounded-5"
+            />
+          </a>
+        </div>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li>
+              <a href="#" class="nav__link">
+                صفحه اصلی
+                <i class="ri-home-4-line"></i>
+              </a>
+            </li>
+            <li class="dropdown__item">
+              <div class="nav__link">
+                محصولات <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+
+              <ul class="dropdown__menu">
+                <li class="dropdown__subitem">
+                  <div class="dropdown__link">
+                    <p>مسباره مات</p>
+                    <div><i class="ri-add-line dropdown__add"></i></div>
+                  </div>
+                  <ul class="dropdown__submenu">
+                    <li>
+                      <a href="#" class="dropdown__sublink">
+                        انواع دانه بندی و بسته بندی
+                        <i class="ri-arrow-left-line"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown__sublink">
+                        آنالیز و مشخصات فنی مسیباره مات
+                        <i class="ri-arrow-left-line"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown__sublink">
+                        آنالیز و مشخصات فنی مسیباره مات
+                        <i class="ri-arrow-left-line"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown__sublink">
+                        آنالیز و مشخصات فنی مسیباره مات
+                        <i class="ri-arrow-left-line"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown__subitem">
+                  <div class="dropdown__link">
+                    <p>مسباره براق</p>
+                    <div><i class="ri-add-line dropdown__add"></i></div>
+                  </div>
+
+                  <ul class="dropdown__submenu">
+                    <li>
+                      <a href="#" class="dropdown__sublink">
+                        انواع دانه بندی و بسته بندی
+                        <i class="ri-arrow-left-line"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown__sublink">
+                        آنالیز و مشخصات فنی مسیباره براق
+                        <i class="ri-arrow-left-line"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown__sublink">
+                        آنالیز و مشخصات فنی مسیباره براق
+                        <i class="ri-arrow-left-line"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown__sublink">
+                        آنالیز و مشخصات فنی مسیباره براق
+                        <i class="ri-arrow-left-line"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown__subitem">
+                  <div class="dropdown__link">
+                    <h2>گارنت قرمز</h2>
+                    <div><i class="ri-add-line dropdown__add"></i></div>
+                  </div>
+
+                  <ul class="dropdown__submenu">
+                    <li>
+                      <a href="#" class="dropdown__sublink">
+                        انواع دانه بندی و بسته بندی
+                        <i class="ri-arrow-left-line"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown__sublink">
+                        آنالیز و مشخصات فنی مسیباره گارنت قرمز
+                        <i class="ri-arrow-left-line"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown__sublink">
+                        آنالیز و مشخصات فنی مسیباره گارنت قرمز
+                        <i class="ri-arrow-left-line"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown__sublink">
+                        آنالیز و مشخصات فنی مسیباره گارنت قرمز
+                        <i class="ri-arrow-left-line"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="dropdown__link"> سیلیس </a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown__item">
+              <div class="nav__link">
+                مقالات و استاندارد ها
+                <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="#" class="dropdown__link">
+                    مزایای کلی مسباره
+                    <i class="ri-arrow-left-line"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown__link">
+                    مشخصات فنی مسباره
+                    <i class="ri-arrow-left-line"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown__link">
+                    مشخصات مسباره
+                    <i class="ri-arrow-left-line"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown__link">
+                    آنالیز مسباره
+                    <i class="ri-arrow-left-line"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown__link">
+                    ایمنی و محیط زیست
+                    <i class="ri-arrow-left-line"></i
+                  ></a>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#" class="nav__link">
+                فروشگاه
+                <i class="ri-store-2-line"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav__link">
+                گالری تصاویر
+                <i class="ri-gallery-line"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav__link">
+                تماس با ما
+                <i class="ri-phone-line"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div
+          class="container my-4 d-flex justify-content-between align-items-center"
+        >
+          <div class="row row-equal-height">
+            <!-- بخش سمت چپ -->
+            <figure class="col-12 col-md-3 p-0 text-center HeroText imgReducer">
+              <img
+                src="./images/machines-copperslag.png"
+                class="img-fluid w-100"
+                alt="دستگاه سرباره‌کش برای تولید مسباره از سرباره مس"
+              />
+              <p class="mt-2 homepageLink">
+                <a
+                  href="https://akhgarsteel.ir/home/%D8%A7%D9%86%D9%88%D8%A7%D8%B9-%D9%BE%D8%A7%D8%AA%DB%8C%D9%84-%D9%87%D8%A7%DB%8C-%D8%AD%D9%85%D9%84-%D8%B3%D8%B1%D8%A8%D8%A7%D8%B1%D9%87-%D9%88-%D8%B7%D8%B1%D8%AD-%D9%85%D8%B0%D8%A7%D8%A8/"
+                  target="_blank"
+                  title="آشنایی با دستگاه سرباره‌کش و فرآیند تولید مسباره"
+                >
+                  آشنایی با <strong>دستگاه سرباره‌کش</strong> و فرآیند تولید
+                  <strong>مسباره</strong>
+                </a>
+              </p>
+            </figure>
+
+            <!-- بخش وسط -->
+            <div
+              class="col-12 col-md-6 p-3 text-center d-flex flex-column justify-content-center align-items-center gap-2"
+            >
+              <h2>معرفی شرکت پیشگام ساینده پارس</h2>
+              <p class="IntroductionText">
+                <strong>شرکت پیشگام ساینده پارس</strong> توزیع‌کننده برتر
+                <strong>مسباره</strong> از <strong>سرباره مس</strong> است. ما
+                انواع <strong>مسباره مات و براق</strong> را با بهترین کیفیت و
+                مطابق با نیاز صنعتگران عرضه می‌کنیم. هدف ما ارائه
+                <strong>ساینده‌های صنعتی</strong> استاندارد و تحویل سریع آن‌ها
+                در سراسر کشور است. برای دریافت
+                <strong>مشخصات فنی مسباره</strong>، آنالیز شیمیایی و استعلام
+                قیمت، با ما در ارتباط باشید.
+              </p>
+            </div>
+
+            <!-- بخش سمت راست -->
+
+            <figure
+              class="col-12 col-md-3 p-0 text-center HeroText displayNone"
+            >
+              <img
+                src="./images/pakaging-copperslag.jpg"
+                class="img-fluid w-100"
+                alt="انواع بسته‌بندی مسباره - جامبو بگ و کیسه‌ای"
+              />
+              <p class="mt-2 text-sm homepageLink">
+                <a href="./maat.html" title="مشاهده انواع بسته‌بندی مسباره">
+                  آشنایی با <strong>انواع بسته‌بندی مسباره</strong>: جامبو بگ و
+                  کیسه‌ای
+                </a>
+              </p>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <figure class="col-12 col-md-3 p-0 text-center HeroText showOnMobile">
+        <img
+          src="./images/pakaging-copperslag.jpg"
+          class="img-fluid w-100"
+          alt="انواع بسته‌بندی مسباره - جامبو بگ و کیسه‌ای"
+        />
+        <p class="mt-2 text-sm homepageLink">
+          <a href="./maat.html" title="مشاهده انواع بسته‌بندی مسباره">
+            آشنایی با <strong>انواع بسته‌بندی مسباره</strong>: جامبو بگ و
+            کیسه‌ای
+          </a>
+        </p>
+      </figure>
+
+      <section class="IntroductionWrapper">
+        <div class="container">
+          <div class="showOnMobile">
+            <h1 class="mb-3">مسباره: ساینده صنعتی قدرتمند</h1>
+
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    <h2 class="mb-3">مسباره چیست و چه کاربردی دارد؟</h2>
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p class="IntroductionWrapper__Text">
+                      <strong
+                        ><a href="#" class="IntroductionWrapper__Text__link p-1"
+                          >مسباره</a
+                        ></strong
+                      >
+                      یک ساینده صنعتی با چگالی بالا است که برای
+                      <strong>سندبلاست</strong> و
+                      <strong>پاک‌سازی سطوح فلزی</strong> به کار می‌رود.
+                      اصلی‌ترین کاربرد آن
+                      <strong>حذف زنگ، رنگ و آلودگی‌ها</strong> از سطوح فلزی در
+                      صنایع مختلف مانند
+                      <strong>نفت، گاز و پتروشیمی</strong> است.
+                    </p>
+                    <p class="IntroductionWrapper__Text">
+                      در فرآیند <strong>بلاستینگ</strong>،
+                      <strong
+                        ><a href="#" class="IntroductionWrapper__Text__link p-1"
+                          >مسباره</a
+                        ></strong
+                      >
+                      با استفاده از <strong>جریان هوای پرفشار</strong> از طریق
+                      <a
+                        class="IntroductionWrapper__Text__link p-1"
+                        href="#"
+                        title="نازل سندبلاست"
+                        >نازل سندبلاست</a
+                      >
+                      به سطح موردنظر پاشیده می‌شود. این ساینده به دلیل ویژگی‌های
+                      خاص خود، در هنگام برخورد با سطح خرد و شکسته می‌شود و به
+                      ذرات کوچکتر تبدیل می‌گردد. این ویژگی باعث افزایش کارایی
+                      عملیات تمیزکاری می‌شود.
+                    </p>
+                    <p class="IntroductionWrapper__Text">
+                      برخلاف مواد ساینده‌ای چون <strong>سیلیس</strong> که
+                      می‌توانند آسیب‌های جدی به ریه‌ها وارد کنند،
+                      <strong>مسباره</strong> از نظر ایمنی برتری دارد. به دلیل
+                      کنترل گرد و غبار و خاصیت شکسته شدن ذرات، ایمنی کارگران در
+                      هنگام استفاده از آن در محیط‌های صنعتی بیشتر است. استفاده
+                      از این ماده باعث کاهش
+                      <strong>مخاطرات زیست‌محیطی</strong>
+                      و مشکلات تنفسی می‌شود.
+                    </p>
+                    <p class="IntroductionWrapper__Text">
+                      استفاده از <strong>مسباره مات و براق</strong> در عملیات
+                      مختلف می‌تواند باعث بهبود کیفیت سطوح و
+                      <strong>افزایش چسبندگی پوشش‌های بعدی</strong> شود. این
+                      ویژگی‌ها سبب می‌شود که <strong>مسباره</strong>
+                      یک انتخاب مناسب برای صنایع با نیاز به عملیات تمیزکاری دقیق
+                      و ایمن باشد.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="row align-items-center justify-content-center displayNone"
+          >
+            <!-- متن -->
+            <div class="col-10 col-lg-6">
+              <h1 class="mb-3">مسباره: ساینده صنعتی قدرتمند</h1>
+              <h2 class="mb-3">مسباره چیست و چه کاربردی دارد؟</h2>
+              <p class="IntroductionWrapper__Text">
+                <strong
+                  ><a href="#" class="IntroductionWrapper__Text__link p-1"
+                    >مسباره</a
+                  ></strong
+                >
+                یک ساینده صنعتی با چگالی بالا است که برای
+                <strong>سندبلاست</strong> و
+                <strong>پاک‌سازی سطوح فلزی</strong> به کار می‌رود. اصلی‌ترین
+                کاربرد آن <strong>حذف زنگ، رنگ و آلودگی‌ها</strong> از سطوح فلزی
+                در صنایع مختلف مانند <strong>نفت، گاز و پتروشیمی</strong> است.
+              </p>
+              <p class="IntroductionWrapper__Text">
+                در فرآیند <strong>بلاستینگ</strong>،
+                <strong
+                  ><a href="#" class="IntroductionWrapper__Text__link p-1"
+                    >مسباره</a
+                  ></strong
+                >
+                با استفاده از <strong>جریان هوای پرفشار</strong> از طریق
+                <a
+                  class="IntroductionWrapper__Text__link p-1"
+                  href="#"
+                  title="نازل سندبلاست"
+                  >نازل سندبلاست</a
+                >
+                به سطح موردنظر پاشیده می‌شود. این ساینده به دلیل ویژگی‌های خاص
+                خود، در هنگام برخورد با سطح خرد و شکسته می‌شود و به ذرات کوچکتر
+                تبدیل می‌گردد. این ویژگی باعث افزایش کارایی عملیات تمیزکاری
+                می‌شود.
+              </p>
+              <p class="IntroductionWrapper__Text">
+                برخلاف مواد ساینده‌ای چون <strong>سیلیس</strong> که می‌توانند
+                آسیب‌های جدی به ریه‌ها وارد کنند، <strong>مسباره</strong> از نظر
+                ایمنی برتری دارد. به دلیل کنترل گرد و غبار و خاصیت شکسته شدن
+                ذرات، ایمنی کارگران در هنگام استفاده از آن در محیط‌های صنعتی
+                بیشتر است. استفاده از این ماده باعث کاهش
+                <strong>مخاطرات زیست‌محیطی</strong>
+                و مشکلات تنفسی می‌شود.
+              </p>
+              <p class="IntroductionWrapper__Text">
+                استفاده از <strong>مسباره مات و براق</strong> در عملیات مختلف
+                می‌تواند باعث بهبود کیفیت سطوح و
+                <strong>افزایش چسبندگی پوشش‌های بعدی</strong> شود. این ویژگی‌ها
+                سبب می‌شود که <strong>مسباره</strong>
+                یک انتخاب مناسب برای صنایع با نیاز به عملیات تمیزکاری دقیق و
+                ایمن باشد.
+              </p>
+            </div>
+          </div>
+        </div>
+        <figure
+          class="justify-content-center IntroductionImages d-flex flex-wrap gap-3"
+        >
+          <a
+            href="./maat.html"
+            title="بیشتر بخوانید درباره مس مات و کاربردهای آن در تمیزکاری سطوح فلزی"
+          >
+            <img
+              class="p-3"
+              src="./images/copper-slag-matte.jpg"
+              alt="مسباره مات با چگالی بالا برای تمیزکاری و سندبلاست سطوح فلزی"
+              title="مسباره مات برای حذف آلودگی‌ها از سطوح فلزی در صنایع مختلف"
+              width="300"
+              height="300"
+              loading="lazy"
+            />
+          </a>
+
+          <a
+            href="./baragh.html"
+            title="بیشتر بخوانید درباره مس براق و کاربردهای آن در پاک‌سازی سطوح فلزی"
+          >
+            <img
+              class="p-3"
+              src="./images/copper-slag-shiny.jpg"
+              alt="مسباره براق با چگالی بالا برای پاک‌سازی و براق کردن سطوح فلزی"
+              title="مسباره براق برای استفاده در صنایع نفت، گاز، و پتروشیمی جهت تمیزکاری سطوح فلزی"
+              width="300"
+              height="300"
+              loading="lazy"
+            />
+          </a>
+        </figure>
+        <div class="mesbareInfoContainer">
+          <div class="mesbareInfo">
+            <div class="mesbareInfoChild">
+              <a href="">مشخصات مسباره مات</a>
+            </div>
+            <div class="mesbareInfoChild">
+              <a href="./public/pdf/anaylysMatt.pdf" download
+                >دانلود آنالیز مسباره مات</a
+              >
+            </div>
+            <div class="mesbareInfoChild">
+              <a href="">با یک متخصص صحبت کنید</a>
+            </div>
+          </div>
+
+          <div class="mesbareInfo">
+            <div class="mesbareInfoChild">
+              <a href="">مشخصات مسباره براق</a>
+            </div>
+            <div class="mesbareInfoChild">
+              <a href="./public/pdf/analys.pdf" download
+                >دانلود آنالیز مسباره براق</a
+              >
+            </div>
+            <div class="mesbareInfoChild">
+              <a href="">با یک متخصص صحبت کنید</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <figure>
+        <img
+          class="SepratorImage"
+          src="./images/abrasive-manufacturing-workshop.jpg"
+          alt="کارگاه تولید و بسته‌بندی مسباره - فرآیند تولید ساینده‌ها"
+          title="کارگاه تولید و بسته‌بندی مسباره - عملیات تولید و بسته‌بندی ساینده‌ها"
+          loading="lazy"
+        />
+      </figure>
+
+      <section class="Products container">
+        <h3 class="text-center">
+          انواع <strong>مسباره</strong> جهات <strong>سندبلاست</strong> سطوع فلزی
+          عبارتند از:
+        </h3>
+        <div class="Products__items">
+          <figure>
+            <img
+              src="./images/industrial-matte-copper-slag-abrasive.jpg"
+              alt="maatBackGround"
+              class="Products__items__Image img-fluid w-100"
+            />
+          </figure>
+          <div
+            class="Products__items__Text d-flex justify-content-center align-self-center flex-column"
+          >
+            <h2 class="d-flex align-items-center justify-content-center">
+              مسباره مات
+            </h2>
+            <p class="Products__items__Text__Details">
+              <strong><a href="./maat.html">مسباره مات</a></strong> حاصل فرآیند
+              ذوب و تغلیظ کوره های ریورپ مس سرچشمه می باشد که پس از جداسازی
+              <strong><a href="./maat.html">سرباره مس</a></strong> از مذاب مس ،
+              <strong><a href="./maat.html">مسباره مات</a></strong> حمل گردیده و
+              داخل سنگ شکن به انواع دانه بندی و سپس در جمبوبگ بسته بندی می گردند
+            </p>
+          </div>
+          <div class="d-flex flex-wrap justify-content-around m-4 gap-3">
+            <article class="card" style="width: 18rem">
+              <img
+                class="card-img-top"
+                src="./images/matte-abrasive-2-3mm-copper-slag.jpg"
+                alt="مسباره مات سایز 2 تا 3 میلی‌متر، ساینده صنعتی برای تمیزکاری سطوح فلزی"
+              />
+              <div class="card-body">
+                <h2 class="card-title text-center">
+                  مسباره مات سایز 2 تا 3 میلی‌متر
+                </h2>
+                <p class="text-center">
+                  خرید مسباره مات با چگالی بالا برای کاربردهای صنعتی
+                </p>
+                <a
+                  href="#"
+                  class="btnCustomCard"
+                  title="خرید مسباره مات سایز 2 تا 3 میلی‌متر"
+                  >خرید</a
+                >
+              </div>
+            </article>
+
+            <article class="card" style="width: 18rem">
+              <img
+                class="card-img-top"
+                src="./images/matte-abrasive-0.5-1.68mm-copper-slag.jpg"
+                alt="مسباره مات سایز 0.5 تا 1.68 میلی‌متر، ساینده صنعتی برای تمیزکاری و آماده‌سازی سطوح فلزی"
+              />
+              <div class="card-body">
+                <h2 class="card-title text-center">
+                  مسباره مات سایز 0.5 تا 1.68 میلی‌متر
+                </h2>
+                <p class="text-center">
+                  خرید مسباره مات با چگالی بالا برای استفاده در صنایع مختلف
+                </p>
+                <a
+                  href="#"
+                  class="btnCustomCard"
+                  title="خرید مسباره مات سایز 0.5 تا 1.68 میلی‌متر"
+                  >خرید</a
+                >
+              </div>
+            </article>
+
+            <article class="card" style="width: 18rem">
+              <img
+                class="card-img-top"
+                src="./images/matte-abrasive-1-2.5mm-copper-slag.png"
+                alt="مسباره مات سایز 1 تا 2.5 میلی‌متر، ساینده صنعتی برای تمیزکاری سطوح فلزی"
+              />
+              <div class="card-body">
+                <h2 class="card-title text-center">
+                  مسباره مات سایز 1 تا 2.5 میلی‌متر
+                </h2>
+                <p class="text-center">
+                  خرید مسباره مات برای کاربردهای صنعتی و تمیزکاری سطوح فلزی
+                </p>
+                <a
+                  href="#"
+                  class="btnCustomCard"
+                  title="خرید مسباره مات سایز 1 تا 2.5 میلی‌متر"
+                  >خرید</a
+                >
+              </div>
+            </article>
+          </div>
+          <a href="./maat.html" class="btnCustomProduct">مسباره مات</a>
+        </div>
+        <div class="Products__items">
+          <figure>
+            <img
+              src="./images/shiny-copper-slag-abrasive-for-blasting.jpg"
+              alt="مسباره براق برای سندبلاست - ساینده صنعتی با چگالی بالا"
+              title="مسباره براق برای سندبلاست و تمیزکاری سطوح فلزی"
+              class="Products__items__Image img-fluid w-100"
+              loading="lazy"
+            />
+          </figure>
+
+          <div
+            class="Products__items__Text d-flex justify-content-center align-self-center flex-column"
+          >
+            <h2 class="d-flex align-items-center justify-content-center">
+              مسباره براق
+            </h2>
+            <p class="Products__items__Text__Details">
+              <strong><a href="./baragh.html">مسباره براق</a></strong> حاصل
+              فرآیند کوره های آندی و کاتدی ذوب خاتون آباد هستند که پس از تهیه و
+              خشک کردن ، داخل سرند به دانه بندی های مختلف تهیه و بسته بندی می
+              گردند
+            </p>
+          </div>
+          <div class="d-flex flex-wrap justify-content-around m-4 gap-3">
+            <article class="card" style="width: 18rem">
+              <figure>
+                <img
+                  class="card-img-top"
+                  src="./images/shiny-copper-slag-size-2-3mm.png"
+                  alt="مسباره براق سایز 1 تا 2.5 میلی‌متر - ساینده صنعتی"
+                  title="مسباره براق سایز 1 تا 2.5 میلی‌متر برای سندبلاست"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title text-center">
+                  مسباره براق سایز 1 تا 2.5 میلی‌متر
+                </h2>
+                <p class="text-center">
+                  خرید مسباره براق برای کاربردهای صنعتی و تمیزکاری سطوح فلزی
+                </p>
+                <a
+                  href="#"
+                  class="btnCustomCard"
+                  title="خرید مسباره براق سایز 1 تا 2.5 میلی‌متر"
+                >
+                  خرید
+                </a>
+              </div>
+            </article>
+
+            <article class="card" style="width: 18rem">
+              <figure>
+                <img
+                  class="card-img-top"
+                  src="./images/shiny-copper-slag-size-0.5-1.68mm.png"
+                  alt="مسباره براق سایز 0.5 تا 1.68 میلی‌متر - ساینده برای تمیزکاری"
+                  title="مسباره براق سایز 0.5 تا 1.68 میلی‌متر مناسب برای کاربردهای صنعتی"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title text-center">
+                  مسباره براق سایز 0.5 تا 1.68 میلی‌متر
+                </h2>
+                <p class="text-center">
+                  خرید مسباره براق برای کاربردهای صنعتی و تمیزکاری سطوح فلزی
+                </p>
+                <a
+                  href="#"
+                  class="btnCustomCard"
+                  title="خرید مسباره براق سایز 1 تا 2.5 میلی‌متر"
+                >
+                  خرید
+                </a>
+              </div>
+            </article>
+
+            <article class="card" style="width: 18rem">
+              <figure>
+                <img
+                  class="card-img-top"
+                  src="./images/shiny-copper-slag-size-1-2mm.png"
+                  alt="مسباره براق سایز 1 تا 2 میلی‌متر - ساینده برای سندبلاست"
+                  title="مسباره براق سایز 1 تا 2 میلی‌متر برای سندبلاست فلزات"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title text-center">
+                  مسباره براق سایز 1 تا 2 میلی‌متر
+                </h2>
+                <p class="text-center">
+                  خرید مسباره براق برای کاربردهای صنعتی و تمیزکاری سطوح فلزی
+                </p>
+                <a
+                  href="#"
+                  class="btnCustomCard"
+                  title="خرید مسباره براق سایز 1 تا 2.5 میلی‌متر"
+                >
+                  خرید
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <a href="./baragh.html" class="btnCustomProduct">مسباره براق</a>
+        </div>
+        <div class="Products__items">
+          <figure>
+            <img
+              src="./Imagess/garnetBackGround.jpg"
+              alt="maatBackGround"
+              class="Products__items__Image img-fluid w-100"
+            />
+          </figure>
+          <div
+            class="Products__items__Text d-flex justify-content-center align-self-center flex-column"
+          >
+            <h2 class="d-flex align-items-center justify-content-center">
+              گارنت قرمز
+            </h2>
+            <p class="Products__items__Text__Details">
+              <strong
+                ><a
+                  target="_blank"
+                  href="https://gmagarnet.com/en/sandblasting-media"
+                  >گارنت قرمز</a
+                ></strong
+              >
+              یک ماده معدنی طبیعی قوی است که بدلیل سختی ، فشردگی ،چگالی و زاویه
+              ای بودن ذاتی آن ویژگی های منحصر به فردی به خود می گیرد.گارنت قرمز
+              بصورت طبیعی ریز دانه است و بسیار مناسب برای پروژ هایی که میزان
+              زبری در واحد سطح از اهمیت ویژه برخوردار است همچون لوله های استنلس
+              استیل
+            </p>
+          </div>
+          <div class="d-flex flex-wrap justify-content-around m-4 gap-3">
+            <div class="card" style="width: 18rem">
+              <figure>
+                <img
+                  class="card-img-top"
+                  src="./images/red-garnet-mesh-20-12-for-blasting.jpg"
+                  alt="مسباره گارنت قرمز مش 20-12 برای سندبلاست"
+                  title="مسباره گارنت قرمز مش 20-12 برای کاربردهای سندبلاست"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="card-body">
+                <h5 class="card-title text-center">
+                  مسباره گارنت قرمز مش 20-12
+                </h5>
+                <p class="text-center">
+                  گارنت قرمز مش 20-12 یک ساینده صنعتی قدرتمند است که برای
+                  سندبلاست و تمیزکاری سطوح فلزی مورد استفاده قرار می‌گیرد. این
+                  محصول از گارنت طبیعی ساخته شده و دارای ویژگی‌های عملکردی بالا
+                  برای کاربردهای سنگین صنعتی است.
+                </p>
+                <a
+                  href="#"
+                  class="btnCustomCard"
+                  title="خرید مسباره گارنت قرمز مش 20-12"
+                  >خرید</a
+                >
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem">
+              <figure>
+                <img
+                  class="card-img-top"
+                  src="./images/garnet-abrasive-red-30-60-mesh.jpg"
+                  alt="مسباره گارنت قرمز مش 30-60 برای سندبلاست"
+                  title="مسباره گارنت قرمز مش 30-60 برای سندبلاست سطوح"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="card-body">
+                <h5 class="card-title text-center">
+                  مسباره گارنت قرمز مش 30-60
+                </h5>
+                <p class="text-center">
+                  گارنت قرمز مش 30-60 یک انتخاب عالی برای تمیزکاری سطوح با دقت
+                  بالا است. این محصول به دلیل اندازه دانه‌های مناسب، برای
+                  عملیات‌های دقیق و تمیزکاری دقیق سطوح فلزی بسیار مناسب می‌باشد.
+                </p>
+                <a
+                  href="#"
+                  class="btnCustomCard"
+                  title="خرید مسباره گارنت قرمز مش 30-60"
+                  >خرید</a
+                >
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem">
+              <figure>
+                <img
+                  class="card-img-top"
+                  src="./images/garnet-abrasive-red-20-40-mesh.jpg"
+                  alt="مسباره گارنت قرمز مش 20-40 برای سندبلاست سطوح فلزی"
+                  title="مسباره گارنت قرمز مش 20-40 مناسب برای سندبلاست سطوح فلزی"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="card-body">
+                <h5 class="card-title text-center">
+                  مسباره گارنت قرمز مش 20-40
+                </h5>
+                <p class="text-center">
+                  گارنت قرمز مش 20-40 برای تمیزکاری سطوح فلزی با قدرت بالای
+                  سایندگی طراحی شده است. این ساینده طبیعی برای کاربردهای
+                  سندبلاست و حذف آلودگی‌ها و رنگ‌ها از سطوح بسیار مناسب است.
+                </p>
+                <a
+                  href="#"
+                  class="btnCustomCard"
+                  title="خرید مسباره گارنت قرمز مش 20-40"
+                  >خرید</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <a href="#" class="btnCustomProduct" id="garnetred">گارنت قرمز</a>
+        </div>
+      </section>
+
+      <section class="CategoryWrapper">
+        <div class="CategoryWrapper__text__bold my-3">
+          انواع دسته بندی و دانه بندی محصولات که شما با توجه به نیاز پروژه تا
+          میتوانین انتخاب نمایید
+        </div>
+        <hr class="Category__hr" />
+        <p class="CategoryWrapper__text__light my-4">
+          انتخاب و خرید مسباره در یک نگاه
+        </p>
+        <div
+          class="row container my-5 m-auto d-flex justify-content-center gap-5"
+        >
+          <swiper-container
+            pagination="true"
+            pagination-clickable="true"
+            space-between="30"
+            slides-per-view="3"
+            class="mySwiper"
+            navigation="true"
+            breakpoints='{
+          "0": { "slidesPerView": 1 },
+          "768": { "slidesPerView": 2 },
+          "1024": { "slidesPerView": 3 }
+        }'
+          >
+            <swiper-slide> </swiper-slide>
+            <swiper-slide>
+              <div
+                class="card text-center mesbareCard w-100 h-100 col-10 col-sm-9 col-md-5 col-lg-3 CategoryCardBorder"
+              >
+                <div class="card-body Category__FlexDisplay">
+                  <h5 class="card-title">مسباره مات</h5>
+                  <img src="./images/shiny-copper-slag-size-2-3mm.png" />
+
+                  <p class="card-text">
+                    مسباره مات سایز 0.5-3 و سایز 2-3 جهت تمیز کاری سطوح فلزی
+                    ضخیم برداشت لایه های ضخیم و رسوب گرفتگی تعمیرات کشتی با
+                    پروفایل های بین 150 میکرون تا 200 میکرون مربوط به سایز 0.5-3
+                    و پروفایل بیشتر از 200 میکرون برای سایز 2-3 مناسب است و در
+                    بسته بندی جمبوبگ 2.5 تنی است
+                  </p>
+                  <a href="#" class="btnCustomProduct">مشاهده</a>
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div
+                class="card text-center mesbareCard w-100 h-100 col-10 col-sm-9 col-md-5 col-lg-3 CategoryCardBorder"
+              >
+                <div class="card-body Category__FlexDisplay">
+                  <h5 class="card-title">مسباره مات</h5>
+                  <img src="./public/images/shiny-copper-slag-size-2-3mm.png" />
+
+                  <p class="card-text">
+                    مسباره مات کیسه 40 کیلویی در جمبوبگ می باشد که هر نوع دانه
+                    بندی در سایز های 0.5-1.68 و 0.5-3 و 2-3 را در ابتدا در کیسه
+                    های 40 کیلیویی بسته بندی می گردند و سپس داخل جمبوبگ 2.5 تنی
+                    گذاشته می شوند
+                  </p>
+                  <a href="#" class="btnCustomProduct">مشاهده</a>
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div
+                class="card text-center mesbareCard w-100 h-100 col-10 col-sm-9 col-md-5 col-lg-3 CategoryCardBorder"
+              >
+                <div class="card-body Category__FlexDisplay">
+                  <h5 class="card-title">مسباره براق</h5>
+                  <img src="./public/images/shiny-copper-slag-size-2-3mm.png" />
+
+                  <p class="card-text">
+                    مسباره براق سایز 0.4-0.8 و سایز 0.5-1 میلیمتر ، جهت سطوح با
+                    درجه لایه اکسیدی بسیار پایین ، خطوط لوه و سر جوشها
+                  </p>
+                  <a href="#" class="btnCustomProduct">مشاهده</a>
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div
+                class="card text-center mesbareCard w-100 h-100 col-sm-9 col-md-5 col-lg-3 CategoryCardBorder"
+              >
+                <div class="card-body Category__FlexDisplay">
+                  <h5 class="card-title">مسباره براق</h5>
+                  <img src="./public/images/shiny-copper-slag-size-2-3mm.png" />
+
+                  <p class="card-text">
+                    مسباره براق سایز 0.5-2 و 1-2 میلیمتر جهت تمیز کاری سطوح
+                    معمولی و درجه لایه اکسیدی پایین و بسیار مناسب برای تعویض
+                    خطوط لوله می باشند پروفایل بین 80 تا 100 میکرون ایجاد می کند
+                  </p>
+                  <a href="#" class="btnCustomProduct">مشاهده</a>
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div
+                class="card text-center mesbareCard w-100 h-100 col-10 col-sm-9 col-md-5 col-lg-3 CategoryCardBorder"
+              >
+                <div class="card-body Category__FlexDisplay">
+                  <h5 class="card-title">مسباره براق</h5>
+                  <img src="./public/images/shiny-copper-slag-size-2-3mm.png" />
+
+                  <p class="card-text">
+                    مسباره براق سایز 0.5-3 میلیمتر جهت سطوح با لایه های اکسیدی
+                    بالا و ایجاد پروفایل بین 100-130 میکرون و سایز 2-3 میلیمتر
+                    جهت سطوح با لایه های اکسیدی بالا و تعویض سطوحی که دارای پوشش
+                    ضخیم و چسبنده می باشند
+                  </p>
+                  <a href="#" class="btnCustomProduct">مشاهده</a>
+                </div>
+              </div></swiper-slide
+            >
+          </swiper-container>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="row">
+        <h2 class="mb-3">با ما در تماس باشید</h2>
+        <div class="col-sm-11 m-auto">
+          <div class="card FooterCard">
+            <div class="card-body">
+              <h3>اطلاعات تماس</h3>
+              <p>
+                <strong>آدرس:</strong> ایران , تهران , فلکه دوم صادقیه , بلوار
+                فردوس شرق , خیابان مالکی جنوبی , کوچه نیلوفر غربی , پلاک 10 ,
+                طبقه سوم , واحد 6
+              </p>
+              <p><strong>کد پستی:</strong> 1481736356</p>
+              <hr class="hr" />
+              <div
+                class="d-flex flex-row-reverse flex-wrap justify-content-center gap-3"
+              >
+                <a
+                  href="tel:+982144955587"
+                  class="d-flex justify-content-center gap-2 text-black-50 PhoneHover"
+                >
+                  <p>+98 2144 9555 87</p>
+                  <strong>:شماره تماس <i class="ri-phone-line"></i> </strong>
+                </a>
+                <a
+                  href="tel:+989122023991"
+                  class="d-flex justify-content-center gap-2 text-black-50 PhoneHover"
+                >
+                  <p>+98 912 2023 991</p>
+                  <strong
+                    >:شماره همراه <i class="ri-smartphone-line"></i
+                  ></strong>
+                </a>
+                <a
+                  href="https://wa.me/+989122023991"
+                  class="d-flex justify-content-center gap-2 text-black-50 PhoneHover"
+                >
+                  <p>+98 912 2023 991</p>
+                  <strong>: واتس اپ <i class="ri-whatsapp-line"></i></strong>
+                </a>
+                <a
+                  href="mailto:mohsenajouri@gmail.com"
+                  class="d-flex justify-content-center gap-2 text-black-50 PhoneHover"
+                >
+                  <p>mohsenajouri@gmail.com</p>
+                  <strong>: ایمیل <i class="ri-mail-line"></i></strong>
+                </a>
+              </div>
+              <hr class="hr" />
+              <h4>مارو در فضای مجازی دنبال کنید</h4>
+              <div class="social__icons">
+                <a href="#" class="social__icon">
+                  <i class="ri-facebook-fill"></i>
+                </a>
+                <a href="#" class="social__icon">
+                  <i class="ri-instagram-fill"></i>
+                </a>
+                <a href="#" class="social__icon">
+                  <i class="ri-twitter-fill"></i>
+                </a>
+                <a href="#" class="social__icon">
+                  <i class="ri-linkedin-fill"></i>
+                </a>
+                <a href="#" class="social__icon">
+                  <i class="ri-telegram-fill"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function toggleHeader() {
+        const headerMobile = document.querySelector(".headerMobile");
+        const headerDesktop = document.querySelector(".headerDesktop");
+
+        if (window.innerWidth <= 1000) {
+          headerMobile.style.display = "flex";
+          headerDesktop.style.display = "none";
+        } else {
+          headerMobile.style.display = "none";
+          headerDesktop.style.display = "block";
+        }
+      }
+
+      window.addEventListener("resize", toggleHeader);
+
+      window.addEventListener("DOMContentLoaded", toggleHeader);
+
+      const menuToggle = document.getElementById("menuToggle");
+      const closeMenu = document.getElementById("closeMenu");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.add("open");
+        closeMenu.style.display = "block";
+      });
+
+      closeMenu.addEventListener("click", () => {
+        closeMenuHandler();
+      });
+
+      document.addEventListener("click", (event) => {
+        if (
+          !mobileMenu.contains(event.target) &&
+          !menuToggle.contains(event.target)
+        ) {
+          closeMenuHandler();
+        }
+      });
+
+      function closeMenuHandler() {
+        mobileMenu.classList.remove("open");
+        closeMenu.style.display = "none";
+        menuToggle.style.display = "block";
+      }
+
+      function toggleSubmenu(button) {
+        const submenu = button.nextElementSibling;
+        if (submenu) {
+          submenu.classList.toggle("open");
+        }
+      }
+    </script>
+    <script
+      src="./node_modules/swiper/swiper-element-bundle.min.js"
+      type="module"
+    ></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "مسباره مات",
+        "image": "https://www.pishgamsayandeh.com/public/images/shiny-copper-slag-size-2-3mm.png",
+        "description": "مسباره مات سایز 0.5-1.68 میلی‌متر برای تمیزکاری سطوح فلزی معمولی مانند مخازن و لوله‌های انتقال گاز. ایجاد پروفایل زبری حداکثر 80 میکرون. بسته‌بندی در جامبوبگ 2.5 تنی.",
+        "brand": {
+          "@type": "Brand",
+          "name": "پیشگام ساینده"
+        }
+      }
+    </script>
+  </body>
+</html>

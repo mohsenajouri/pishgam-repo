@@ -1,0 +1,7 @@
+.Benefits {
+  background-color: rgb(182, 182, 182);
+  box-shadow: 0px 0px 10px black;
+  border: 5px solid white;
+  .BenefitsLI {
+  }
+}

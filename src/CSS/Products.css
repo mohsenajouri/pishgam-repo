@@ -1,0 +1,74 @@
+.Products {
+  width: 90%;
+  margin: auto;
+  h3 {
+    text-align: center;
+    font-size: 22px !important;
+    strong {
+      color: #3d8da8;
+    }
+  }
+  .Products__items {
+    .Products__items__Image {
+      border-radius: 15px;
+      margin: 20px 0;
+    }
+    .Products__items__Text__Details {
+      width: 90%;
+      margin: auto;
+      max-width: 600px;
+      text-align: justify;
+      font-size: 22px;
+
+      strong {
+        a {
+          color: #3d8da8 !important;
+        }
+      }
+    }
+  }
+  .btnCustomCard {
+    display: block;
+    text-align: center;
+    width: 70px;
+    height: 40px;
+    background-color: #5c98aa;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    line-height: 40px !important;
+    margin: 10px auto;
+    transition: all 0.3s;
+    background-color: #2e5c6a;
+    &:hover {
+      background-color: #3d8da8;
+      scale: 1.04;
+    }
+  }
+}
+
+.btnCustomProduct {
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  width: 200px;
+  height: 50px;
+  margin: 0px auto;
+  display: block;
+  background-color: #5c98aa;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  transition: all 0.3s;
+  background-color: var(--primart-red);
+  &:hover {
+    background-color: #2e5c6a;
+    scale: 1.1;
+  }
+}
+
+#garnetred {
+  margin: 20px auto;
+}

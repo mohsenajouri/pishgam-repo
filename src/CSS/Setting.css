@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none !important;
+  color: white !important;
+}
+body {
+  direction: rtl !important;
+}
+.hr {
+  border: 1px solid #2b2b2b;
+}
+.hidden {
+  display: none !important;
+}
+li{
+  list-style: square;
+}
+@font-face {
+  font-family: "yekan";
+  src: url("./Fonts/IranYekan/Regular/IRANYekan.eot"),
+    url("./Fonts/IranYekan/Regular/IRANYekan.ttf"),
+    url("./Fonts/IranYekan/Regular/IRANYekan.woff"),
+    url("./Fonts/IranYekan/Regular/IRANYekan.woff2");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "yekan";
+  src: url("./Fonts/IranYekan/Bold/IRANYekan-Bold.eot"),
+    url("./Fonts/IranYekan/Bold/IRANYekan-Bold.ttf"),
+    url("./Fonts/IranYekan/Bold/IRANYekan-Bold.woff"),
+    url("./Fonts/IranYekan/Bold/IRANYekan-Bold.woff2");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "yekan";
+  src: url("./Fonts/IranYekan/ExtraBold/IRANYekan-ExtraBold.eot"),
+    url("./Fonts/IranYekan/ExtraBold/IRANYekan-ExtraBold.ttf"),
+    url("./Fonts/IranYekan/ExtraBold/IRANYekan-ExtraBold.woff"),
+    url("./Fonts/IranYekan/ExtraBold/IRANYekan-ExtraBold.woff2");
+  font-weight: bolder;
+}
+@font-face {
+  font-family: "yekan";
+  src: url("./Fonts/IranYekan/Medium/IRANYekan-Medium.eot"),
+    url("./Fonts/IranYekan/Medium/IRANYekan-Medium.ttf"),
+    url("./Fonts/IranYekan/Medium/IRANYekan-Medium.woff"),
+    url("./Fonts/IranYekan/Medium/IRANYekan-Medium.woff2");
+  font-weight: lighter;
+}

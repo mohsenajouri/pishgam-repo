@@ -1,0 +1,14 @@
+.Baragh__Introduction {
+  margin: 40px auto;
+  .Baragh__Introduction__card {
+    background-color: #3d8da8;
+    color: white;
+    li {
+      list-style: circle !important;
+    }
+  }
+  .Baragh__Introduction__text {
+    font-size: 20px;
+    text-align: justify;
+  }
+}
