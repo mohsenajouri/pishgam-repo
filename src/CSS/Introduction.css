@@ -12,6 +12,9 @@
   .IntroductionWrapper__Text__link {
     color: black !important;
   }
+  a {
+    color: black !important;
+  }
 }
 .SepratorImage {
   width: 90%;

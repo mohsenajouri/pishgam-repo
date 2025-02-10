@@ -35,6 +35,16 @@ swiper-container::part(pagination) {
 
 @media (max-width: 768px) {
   /* Adjust breakpoint as needed */
+  .mySwiper2 {
+    width: 100% !important;
+
+    p {
+      display: none;
+    }
+    h2 {
+      font-size: 1.2rem !important;
+    }
+  }
   swiper-container::part(button-next),
   swiper-container::part(button-prev) {
     display: none;
@@ -54,6 +64,12 @@ swiper-container::part(pagination) {
     img {
       width: 150px;
       height: 150px;
+    }
+  }
+
+  .maatImagContainer {
+    img {
+      object-fit: cover !important;
     }
   }
 
@@ -167,4 +183,53 @@ swiper-container::part(pagination) {
   color: #d1d1d1; /* Slightly lighter gray for the text */
   font-size: 1rem; /* Adjusted font size for better readability */
   line-height: 1.6; /* Increased line height for better text flow */
+}
+
+.articlLabel {
+  background-color: #7d0000;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 80px;
+  border-radius: 15px;
+  transition: all 300ms linear;
+  font-size: 1rem;
+  padding: 5px 22px 5px 0px;
+  overflow: hidden;
+  text-align: center;
+  text-wrap: nowrap;
+
+  span {
+    margin-right: 35px;
+  }
+
+  &:hover {
+    padding: 5px 22px;
+
+    width: 250px;
+    span {
+      transition: all 1000ms linear;
+
+      margin-right: 0px;
+    }
+  }
+}
+
+.img-hover-scale {
+  transition: transform 0.3s ease-in-out;
+}
+
+.img-hover-scale:hover {
+  transform: scale(1.1);
+}
+
+.maatImagContainer {
+  width: 100vw;
+  height: calc(100vh - 88px);
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 }
