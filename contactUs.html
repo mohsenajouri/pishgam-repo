@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تماس با ما</title>
+    <link rel="stylesheet" href="./src/CSS/main.css" />
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="headerMobile">
+        <button class="menu-toggle" id="menuToggle">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+        <a href="./index.html">
+            <img src="./public/images/logonew1.jpg" alt="Logo" width="45" class="rounded-5" />
+        </a>
+
+        <nav class="mobile-menu" id="mobileMenu">
+            <div class="CloseMenuWrapper">
+                <button class="close-menu" id="closeMenu">
+                    <div><i class="ri-close-fill"></i></div>
+                </button>
+            </div>
+
+            <ul class="MenuUl">
+                <li class="menu-item">
+                    <a href="./index.html" class="text-white d-block w-100">صفحه اصلی
+                    </a>
+                </li>
+                <li>
+                    <button class="menu-item" onclick="toggleSubmenu(this)">
+                        محصولات <span>+</span>
+                    </button>
+                    <ul class="submenu">
+                        <li>
+                            <button class="menu-item" onclick="toggleSubmenu(this)">
+                                مسباره مات
+                                <span>+</span>
+                            </button>
+                            <ul class="submenu">
+                                <li class="submenu__items">
+                                    <a href="#" class="w-100 d-block">دانه بندی و بسته بندی مسباره مات
+                                    </a>
+                                </li>
+                                <li class="submenu__items">
+                                    <a href="#" class="w-100 d-block">آنالیز و مشخصات فنی مسباره مات
+                                    </a>
+                                </li>
+                                <li class="submenu__items">
+                                    <a href="#" class="w-100 d-block">آنالیز و مشخصات فنی مسباره مات
+                                    </a>
+                                </li>
+                                <li class="submenu__items">
+                                    <a href="#" class="w-100 d-block">آنالیز و مشخصات فنی مسباره مات
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button class="menu-item" onclick="toggleSubmenu(this)">
+                                مسباره براق
+                                <span>+</span>
+                            </button>
+                            <ul class="submenu">
+                                <li class="submenu__items">
+                                    <a href="#" class="w-100 d-block">دانه بندی و بسته بندی مسباره براق
+                                    </a>
+                                </li>
+                                <li class="submenu__items">
+                                    <a href="#" class="w-100 d-block">آنالیز و مشخصات فنی مسباره براق
+                                    </a>
+                                </li>
+                                <li class="submenu__items">
+                                    <a href="#" class="w-100 d-block">آنالیز و مشخصات فنی مسباره براق
+                                    </a>
+                                </li>
+                                <li class="submenu__items">
+                                    <a href="#" class="w-100 d-block">آنالیز و مشخصات فنی مسباره براق
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button class="menu-item" onclick="toggleSubmenu(this)">
+                                گارنت قرمز
+                                <span>+</span>
+                            </button>
+                            <ul class="submenu">
+                                <li class="submenu__items">
+                                    <a href="#" class="w-100 d-block">دانه بندی و بسته بندی گارنت قرمز
+                                    </a>
+                                </li>
+                                <li class="submenu__items">
+                                    <a href="#" class="w-100 d-block">آنالیز و مشخصات فنی گارنت قرمز
+                                    </a>
+                                </li>
+                                <li class="submenu__items">
+                                    <a href="#" class="w-100 d-block">آنالیز و مشخصات فنی گارنت قرمز
+                                    </a>
+                                </li>
+                                <li class="submenu__items">
+                                    <a href="#" class="w-100 d-block">آنالیز و مشخصات فنی گارنت قرمز
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="#">سیلیس</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <button class="menu-item" onclick="toggleSubmenu(this)">
+                        مقالات و استاندارد ها
+                        <span>+</span>
+                    </button>
+                    <ul class="submenu">
+                        <li>
+                            <a href="#" class="w-100 d-block">مزایای کلی مسیاره </a>
+                        </li>
+                        <li>
+                            <a href="#" class="w-100 d-block">مشخصات فنی مسباره</a>
+                        </li>
+                        <li>
+                            <a href="#" class="w-100 d-block">مشخصات مسباره </a>
+                        </li>
+                        <li>
+                            <a href="#" class="w-100 d-block">آنالیز مسباره </a>
+                        </li>
+                        <li>
+                            <a href="#" class="w-100 d-block">ایمنی و محیط زیست </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="./Blogs.html" class="text-white d-block w-100">وبلاگ </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="text-white d-block w-100">فروشگاه </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="text-white d-block w-100">گالری تصاویر </a>
+                </li>
+                <li class="menu-item">
+                    <a href="./contactUs.html" class="text-white d-block w-100">تماس با ما </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <header class="headerDesktop">
+        <nav class="navDesktop">
+            <div class="nav__data">
+                <a href="./index.html" class="nav__logo">
+                    <img src="./public/images/logonew1.jpg" alt="Logo" width="50" class="Logo rounded-5" />
+                </a>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="./index.html" class="nav__link">
+                            صفحه اصلی
+                            <i class="ri-home-4-line"></i>
+                        </a>
+                    </li>
+                    <li class="dropdown__item">
+                        <div class="nav__link">
+                            محصولات <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+
+                        <ul class="dropdown__menu">
+                            <li class="dropdown__subitem">
+                                <div class="dropdown__link">
+                                    <p>مسباره مات</p>
+                                    <div><i class="ri-add-line dropdown__add"></i></div>
+                                </div>
+                                <ul class="dropdown__submenu">
+                                    <li>
+                                        <a href="#" class="dropdown__sublink">
+                                            انواع دانه بندی و بسته بندی
+                                            <i class="ri-arrow-left-line"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown__sublink">
+                                            آنالیز و مشخصات فنی مسیباره مات
+                                            <i class="ri-arrow-left-line"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown__sublink">
+                                            آنالیز و مشخصات فنی مسیباره مات
+                                            <i class="ri-arrow-left-line"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown__sublink">
+                                            آنالیز و مشخصات فنی مسیباره مات
+                                            <i class="ri-arrow-left-line"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown__subitem">
+                                <div class="dropdown__link">
+                                    <p>مسباره براق</p>
+                                    <div><i class="ri-add-line dropdown__add"></i></div>
+                                </div>
+
+                                <ul class="dropdown__submenu">
+                                    <li>
+                                        <a href="#" class="dropdown__sublink">
+                                            انواع دانه بندی و بسته بندی
+                                            <i class="ri-arrow-left-line"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown__sublink">
+                                            آنالیز و مشخصات فنی مسیباره براق
+                                            <i class="ri-arrow-left-line"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown__sublink">
+                                            آنالیز و مشخصات فنی مسیباره براق
+                                            <i class="ri-arrow-left-line"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown__sublink">
+                                            آنالیز و مشخصات فنی مسیباره براق
+                                            <i class="ri-arrow-left-line"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown__subitem">
+                                <div class="dropdown__link">
+                                    <p>گارنت قرمز</p>
+                                    <div><i class="ri-add-line dropdown__add"></i></div>
+                                </div>
+
+                                <ul class="dropdown__submenu">
+                                    <li>
+                                        <a href="#" class="dropdown__sublink">
+                                            انواع دانه بندی و بسته بندی
+                                            <i class="ri-arrow-left-line"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown__sublink">
+                                            آنالیز و مشخصات فنی مسیباره گارنت قرمز
+                                            <i class="ri-arrow-left-line"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown__sublink">
+                                            آنالیز و مشخصات فنی مسیباره گارنت قرمز
+                                            <i class="ri-arrow-left-line"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown__sublink">
+                                            آنالیز و مشخصات فنی مسیباره گارنت قرمز
+                                            <i class="ri-arrow-left-line"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown__link"> سیلیس </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown__item">
+                        <div class="nav__link">
+                            مقالات و استاندارد ها
+                            <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+
+                        <ul class="dropdown__menu">
+                            <li>
+                                <a href="#" class="dropdown__link">
+                                    مزایای کلی مسباره
+                                    <i class="ri-arrow-left-line"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="dropdown__link">
+                                    مشخصات فنی مسباره
+                                    <i class="ri-arrow-left-line"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="dropdown__link">
+                                    مشخصات مسباره
+                                    <i class="ri-arrow-left-line"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown__link">
+                                    آنالیز مسباره
+                                    <i class="ri-arrow-left-line"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown__link">
+                                    ایمنی و محیط زیست
+                                    <i class="ri-arrow-left-line"></i></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./Blogs.html" class="nav__link">
+                            وبلاگ
+                            <i class="ri-news-fill"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav__link">
+                            فروشگاه
+                            <i class="ri-store-2-line"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav__link">
+                            گالری تصاویر
+                            <i class="ri-gallery-line"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./contactUs.html" class="nav__link">
+                            تماس با ما
+                            <i class="ri-phone-line"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="mt-5">
+        <div class="row m-auto">
+            <!-- فرم تماس -->
+            <div class="col-11 col-md-6 ContactUsForm m-auto">
+                <h3>فرم ارتباط با ما</h3>
+                <!--ایمیل-->
+                <form action="https://formsubmit.co/mohsenajouri@gmail.com" method="post"
+                    class="w-100 col-11 ContactUsForm">
+                    <div class="mb-3 d-flex justify-content-center align-items-center flex-column">
+                        <input type="text" class="form-Text" id="name" name="name" placeholder="نام شرکت / نام و نام خانوداگی">
+                    </div>
+                    <div class="mb-3 d-flex justify-content-center align-items-center flex-column">
+                        <input type="text" class="form-Text" id="KodeMelli" name="KodeMelli"
+                            placeholder="شناسه ملی شرکت / کد ملی">
+                    </div>
+                    <div class="mb-3 d-flex justify-content-center align-items-center flex-column">
+                        <input type="email" class="form-Text" id="email" name="email" placeholder=" *ایمیل " required>
+                    </div>
+                    <div class="mb-3 d-flex justify-content-center align-items-center flex-column">
+                        <input type="tel" class="form-Text " id="phone" name="phone" placeholder="شماره همراه">
+                    </div>
+                    <div class="mb-3 d-flex justify-content-center align-items-center flex-column">
+                        <input type="text" rows="2" class="form-Text" id="subject" name="subject" required
+                            placeholder=" *عناون: پیش فاکتور بابت مسباره مات / درخواست خرید مسباره مات سایز 0.5 تا 1.68">
+                    </div>
+                    <div class="mb-3 d-flex justify-content-center align-items-center flex-column">
+                        <textarea class="form-Text" id="message" name="message" rows="4"
+                            placeholder="متن پیام"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">ارسال</button>
+                </form>
+            </div>
+            <div class="col-11 col-md-5 m-auto d-flex my-5">
+                <span class="FormSpan"></span>
+                <div>
+                    <h3>اطلاعات تماس</h3>
+                    <div>
+                        <i class="ri-map-pin-line"></i>
+                        <strong>آدرس پستی:</strong>
+                        <p>ایران , تهران , فلکه دوم صادقیه , بلوار فردوس شرق , خیابان مالکی جنوبی , کوچه نیلوفر غربی ,
+                            پلاک 10 , طبقه سوم , واحد 6</p>
+                    </div>
+                    <div>
+                        <i class="ri-map-pin-line"></i>
+                        <strong>کد پستی:</strong>
+                        <p>1481736356</p>
+                    </div>
+                    <div class="text-dark">
+                        <i class="ri-building-3-line"></i>
+                        <strong>شناسه ملی شرکت :</strong>
+                        <p>14002915507 </p>
+                    </div>
+                    <a href="tel:+982144955587" class="text-dark">
+                        <i class="ri-phone-line"></i>
+                        <strong>:شماره تماس </strong>
+                        <p>+982144955587</p>
+                    </a>
+                    <a href="tel:+989122023991" class="text-dark">
+                        <i class="ri-smartphone-line"></i>
+                        <strong>:شماره همراه </strong>
+                        <p>+989122023991</p>
+                    </a>
+                    <a href="https://wa.me/+989122023991" class="text-dark">
+                        <i class="ri-whatsapp-line"></i>
+                        <strong>: واتس اپ </strong>
+                        <p>+989122023991</p>
+                    </a>
+                    <a href="mailto:mohsenajouri@gmail.com" class="text-dark">
+                        <i class="ri-mail-line"></i>
+                        <strong>: ایمیل </strong>
+                        <p>mohsenajouri@gmail.com</p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</html>
+
+
+
+
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    function toggleHeader() {
+        const headerMobile = document.querySelector(".headerMobile");
+        const headerDesktop = document.querySelector(".headerDesktop");
+
+        if (window.innerWidth <= 1000) {
+            headerMobile.style.display = "flex";
+            headerDesktop.style.display = "none";
+        } else {
+            headerMobile.style.display = "none";
+            headerDesktop.style.display = "block";
+        }
+    }
+
+    window.addEventListener("resize", toggleHeader);
+
+    window.addEventListener("DOMContentLoaded", toggleHeader);
+
+    const menuToggle = document.getElementById("menuToggle");
+    const closeMenu = document.getElementById("closeMenu");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.add("open");
+        closeMenu.style.display = "block";
+    });
+
+    closeMenu.addEventListener("click", () => {
+        closeMenuHandler();
+    });
+
+    document.addEventListener("click", (event) => {
+        if (
+            !mobileMenu.contains(event.target) &&
+            !menuToggle.contains(event.target)
+        ) {
+            closeMenuHandler();
+        }
+    });
+
+    function closeMenuHandler() {
+        mobileMenu.classList.remove("open");
+        closeMenu.style.display = "none";
+        menuToggle.style.display = "block";
+    }
+
+    function toggleSubmenu(button) {
+        const submenu = button.nextElementSibling;
+        if (submenu) {
+            submenu.classList.toggle("open");
+        }
+    }
+</script>
+
+</body>
+
+</html>

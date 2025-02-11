@@ -1,0 +1,100 @@
+@import "./Setting.css";
+@import "./HeaderDesktop.css";
+@import "./HeaderMobile.css";
+@import "./Footer.css";
+@import "./Hero.css";
+@import "./Introduction.css";
+@import "./Products.css";
+@import "./Category.css";
+@import "./MesbarehIntroduction.css";
+@import "./MaatIntroduction.css";
+@import "./Benefits.css";
+@import "./Tables.css";
+@import "./BaraghIntroduction.css";
+@import "./Diffrence.css";
+@import "./ContactUsPage.css";
+@import "./Blog.css";
+
+swiper-container {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  border-radius: 150px !important;
+}
+
+swiper-container::part(pagination) {
+  bottom: -2px;
+}
+
+@media (max-width: 768px) {
+  /* Adjust breakpoint as needed */
+  swiper-container::part(button-next),
+  swiper-container::part(button-prev) {
+    display: none;
+  }
+
+  .displayNone {
+    display: none !important;
+  }
+}
+
+.showOnMobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .IntroductionImages {
+    img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  .showOnMobile {
+    display: block !important;
+  }
+
+  .HeroText {
+    background-color: #3d8da8;
+  }
+
+  .homepageLink {
+    padding: 15px;
+    a {
+      &:hover {
+        color: #efb036 !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .imgReducer {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.content {
+  border-top: 2px solid white;
+}
+
+::-webkit-scrollbar {
+  background-color: #3d8da8;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}

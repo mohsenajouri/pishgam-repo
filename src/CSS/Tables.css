@@ -1,0 +1,20 @@
+.table {
+  direction: ltr;
+  border: 1px solid black;
+}
+.tableColor {
+  background-color: #eef2f2 !important;
+}
+td,
+th {
+  border: none !important;
+  width: 50vw;
+}
+
+@media screen and (max-width: 768px) {
+  td , th {
+    font-size: 10px;
+    border: 1px solid black !important;
+  }
+}
+

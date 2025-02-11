@@ -1,0 +1,19 @@
+.Mesbareh__Introduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 0;
+  color: #333;
+  font-size: 1.2rem;
+  text-align: center;
+  .JustifyText {
+    text-align: justify;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .Mesbareh__Introduction {
+    padding: 0;
+  }
+}

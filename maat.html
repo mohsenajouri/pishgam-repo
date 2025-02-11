@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="./Images/favicon.ico" />
+  <title>مسباره مات</title>
+  <link rel="stylesheet" href="./src/CSS/main.css" />
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="headerMobile">
+    <button class="menu-toggle" id="menuToggle">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+      </svg>
+    </button>
+    <a href="./index.html">
+      <img src="./public/images/logonew1.jpg" alt="Logo" width="45" class="rounded-5" />
+    </a>
+
+    <nav class="mobile-menu" id="mobileMenu">
+      <div class="CloseMenuWrapper">
+        <button class="close-menu" id="closeMenu">
+          <div><i class="ri-close-fill"></i></div>
+        </button>
+      </div>
+
+      <ul class="MenuUl">
+        <li class="menu-item">
+          <a href="./index.html" class="text-white d-block w-100">صفحه اصلی
+          </a>
+        </li>
+        <li>
+          <button class="menu-item" onclick="toggleSubmenu(this)">
+            محصولات <span>+</span>
+          </button>
+          <ul class="submenu">
+            <li>
+              <button class="menu-item" onclick="toggleSubmenu(this)">
+                مسباره مات
+                <span>+</span>
+              </button>
+              <ul class="submenu">
+                <li class="submenu__items">
+                  <a href="#" class="w-100 d-block">دانه بندی و بسته بندی مسباره مات
+                  </a>
+                </li>
+                <li class="submenu__items">
+                  <a href="#" class="w-100 d-block">آنالیز و مشخصات فنی مسباره مات
+                  </a>
+                </li>
+                <li class="submenu__items">
+                  <a href="#" class="w-100 d-block">آنالیز و مشخصات فنی مسباره مات
+                  </a>
+                </li>
+                <li class="submenu__items">
+                  <a href="#" class="w-100 d-block">آنالیز و مشخصات فنی مسباره مات
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <button class="menu-item" onclick="toggleSubmenu(this)">
+                مسباره براق
+                <span>+</span>
+              </button>
+              <ul class="submenu">
+                <li class="submenu__items">
+                  <a href="#" class="w-100 d-block">دانه بندی و بسته بندی مسباره براق
+                  </a>
+                </li>
+                <li class="submenu__items">
+                  <a href="#" class="w-100 d-block">آنالیز و مشخصات فنی مسباره براق
+                  </a>
+                </li>
+                <li class="submenu__items">
+                  <a href="#" class="w-100 d-block">آنالیز و مشخصات فنی مسباره براق
+                  </a>
+                </li>
+                <li class="submenu__items">
+                  <a href="#" class="w-100 d-block">آنالیز و مشخصات فنی مسباره براق
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <button class="menu-item" onclick="toggleSubmenu(this)">
+                گارنت قرمز
+                <span>+</span>
+              </button>
+              <ul class="submenu">
+                <li class="submenu__items">
+                  <a href="#" class="w-100 d-block">دانه بندی و بسته بندی گارنت قرمز
+                  </a>
+                </li>
+                <li class="submenu__items">
+                  <a href="#" class="w-100 d-block">آنالیز و مشخصات فنی گارنت قرمز
+                  </a>
+                </li>
+                <li class="submenu__items">
+                  <a href="#" class="w-100 d-block">آنالیز و مشخصات فنی گارنت قرمز
+                  </a>
+                </li>
+                <li class="submenu__items">
+                  <a href="#" class="w-100 d-block">آنالیز و مشخصات فنی گارنت قرمز
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item"><a href="#">سیلیس</a></li>
+          </ul>
+        </li>
+        <li>
+          <button class="menu-item" onclick="toggleSubmenu(this)">
+            مقالات و استاندارد ها
+            <span>+</span>
+          </button>
+          <ul class="submenu">
+            <li>
+              <a href="#" class="w-100 d-block">مزایای کلی مسیاره </a>
+            </li>
+            <li>
+              <a href="#" class="w-100 d-block">مشخصات فنی مسباره</a>
+            </li>
+            <li>
+              <a href="#" class="w-100 d-block">مشخصات مسباره </a>
+            </li>
+            <li>
+              <a href="#" class="w-100 d-block">آنالیز مسباره </a>
+            </li>
+            <li>
+              <a href="#" class="w-100 d-block">ایمنی و محیط زیست </a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a href="./Blogs.html" class="text-white d-block w-100">وبلاگ </a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="text-white d-block w-100">فروشگاه </a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="text-white d-block w-100">گالری تصاویر </a>
+        </li>
+        <li class="menu-item">
+          <a href="./contactUs.html" class="text-white d-block w-100">تماس با ما </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <header class="headerDesktop">
+    <nav class="navDesktop">
+      <div class="nav__data">
+        <a href="./index.html" class="nav__logo">
+          <img src="./public/images/logonew1.jpg" alt="Logo" width="50" class="Logo rounded-5" />
+        </a>
+      </div>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li>
+            <a href="./index.html" class="nav__link">
+              صفحه اصلی
+              <i class="ri-home-4-line"></i>
+            </a>
+          </li>
+          <li class="dropdown__item">
+            <div class="nav__link">
+              محصولات <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+            </div>
+
+            <ul class="dropdown__menu">
+              <li class="dropdown__subitem">
+                <div class="dropdown__link">
+                  <p>مسباره مات</p>
+                  <div><i class="ri-add-line dropdown__add"></i></div>
+                </div>
+                <ul class="dropdown__submenu">
+                  <li>
+                    <a href="#" class="dropdown__sublink">
+                      انواع دانه بندی و بسته بندی
+                      <i class="ri-arrow-left-line"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown__sublink">
+                      آنالیز و مشخصات فنی مسیباره مات
+                      <i class="ri-arrow-left-line"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown__sublink">
+                      آنالیز و مشخصات فنی مسیباره مات
+                      <i class="ri-arrow-left-line"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown__sublink">
+                      آنالیز و مشخصات فنی مسیباره مات
+                      <i class="ri-arrow-left-line"></i>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown__subitem">
+                <div class="dropdown__link">
+                  <p>مسباره براق</p>
+                  <div><i class="ri-add-line dropdown__add"></i></div>
+                </div>
+
+                <ul class="dropdown__submenu">
+                  <li>
+                    <a href="#" class="dropdown__sublink">
+                      انواع دانه بندی و بسته بندی
+                      <i class="ri-arrow-left-line"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown__sublink">
+                      آنالیز و مشخصات فنی مسیباره براق
+                      <i class="ri-arrow-left-line"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown__sublink">
+                      آنالیز و مشخصات فنی مسیباره براق
+                      <i class="ri-arrow-left-line"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown__sublink">
+                      آنالیز و مشخصات فنی مسیباره براق
+                      <i class="ri-arrow-left-line"></i>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown__subitem">
+                <div class="dropdown__link">
+                  <p>گارنت قرمز</p>
+                  <div><i class="ri-add-line dropdown__add"></i></div>
+                </div>
+
+                <ul class="dropdown__submenu">
+                  <li>
+                    <a href="#" class="dropdown__sublink">
+                      انواع دانه بندی و بسته بندی
+                      <i class="ri-arrow-left-line"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown__sublink">
+                      آنالیز و مشخصات فنی مسیباره گارنت قرمز
+                      <i class="ri-arrow-left-line"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown__sublink">
+                      آنالیز و مشخصات فنی مسیباره گارنت قرمز
+                      <i class="ri-arrow-left-line"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown__sublink">
+                      آنالیز و مشخصات فنی مسیباره گارنت قرمز
+                      <i class="ri-arrow-left-line"></i>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="dropdown__link"> سیلیس </a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown__item">
+            <div class="nav__link">
+              مقالات و استاندارد ها
+              <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+            </div>
+
+            <ul class="dropdown__menu">
+              <li>
+                <a href="#" class="dropdown__link">
+                  مزایای کلی مسباره
+                  <i class="ri-arrow-left-line"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="dropdown__link">
+                  مشخصات فنی مسباره
+                  <i class="ri-arrow-left-line"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="dropdown__link">
+                  مشخصات مسباره
+                  <i class="ri-arrow-left-line"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="dropdown__link">
+                  آنالیز مسباره
+                  <i class="ri-arrow-left-line"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="dropdown__link">
+                  ایمنی و محیط زیست
+                  <i class="ri-arrow-left-line"></i></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="./Blogs.html" class="nav__link">
+              وبلاگ
+              <i class="ri-news-fill"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav__link">
+              فروشگاه
+              <i class="ri-store-2-line"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav__link">
+              گالری تصاویر
+              <i class="ri-gallery-line"></i>
+            </a>
+          </li>
+          <li>
+            <a href="./contactUs.html" class="nav__link">
+              تماس با ما
+              <i class="ri-phone-line"></i>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section class="Mesbareh__Introduction">
+    <div class="col-12">
+      <img class="p-2 w-75 shadow-lg rounded-4" src="./images/High-Quality-Matte-Abrasive.jpg"
+        alt="مسباره با پوشش مات" />
+    </div>
+  </section>
+
+  <section class="Maat__Introduction h-100 d-flex col-11 col-md-9 m-auto my-5">
+    <div class="w-75 mattInfoCOntainer">
+      <div class="w-100 mattinfoFirstText">
+        <article class="card Maat__Introduction__card">
+          <header>
+            <h1 class="card-header text-center">
+              مسباره مات: یکی از انواع مسباره
+            </h1>
+          </header>
+          <div class="card-body">
+            <h2 class="card-title text-center">مسباره مات چیست؟</h2>
+            <p class="Maat__Introduction__text card-text col-10 m-auto">
+              مسباره مات حاصل فرآیند ذوب و تغلیظ کوره‌های ریورپ مس سرچشمه
+              می‌باشد که هنگامیکه مذاب مس آماده گردید توسط دستگاه سرباره‌کش،
+              سرباره از روی مذاب مس جدا می‌گردد و در هوای آزاد طی شانزده روز
+              سرد می‌گردد. بدلیل فرآیند سرد شدن یکنواخت و آرام خود دارای
+              ساختاری نرماله و یکپارچه می‌گردد که همین امر سبب افزایش چگالی
+              مسباره مات می‌شود.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="w-75">
+      <img style="width: 100%; height: 100%" class="p-2 shadow-lg rounded-4"
+        src="./images/High-Quality-Matte-Abrasive.jpg" alt="مسباره با پوشش براق" />
+    </div>
+  </section>
+  <section class="Diffrence col-11 col-md-9 m-auto my-5">
+    <div class="card Diffrence__card" style="background-color: #2a004e">
+      <h2 class="card-header text-center text-white rounded-3">
+        تفاوت مسباره مات و براق
+      </h2>
+      <div class="card-body content">
+        <p class="Diffrence__text card-text col-10 m-auto text-justify">
+          بدلیل سرد شدن سریع سرباره مس در حوضچه آب سرد در فرآیند تولید مسباره
+          براق، ساختاری ترد و شکننده می‌دهد که چنین ساختاری سرعت سندبلاست را
+          در پروژه‌های تعویض پوشش خطوط لوله به شدت افزایش می‌دهد. همچنین، به
+          دلیل عدم نیاز به سنگ شکن، هزینه تهیه و تولید این نوع مسباره ارزان‌تر
+          می‌باشد. لازم به توضیح است که در تمام دنیا برای سندبلاست سطوح فلزی
+          از مسباره براق و گارنت قرمز استفاده می‌شود و مسباره مات خاص کشور
+          عزیزمان ایران است، زیرا فرآیند تولید مس از کوره‌های ریورپ در تمام
+          دنیا منسوخ شده و برای همین چنین سرباره‌ای تنها در کشور ایران وجود
+          دارد.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="Benefits col-11 col-md-9 m-auto my-5 p-3 rounded-2">
+    <h2 class="text-center">مزایای استفاده از سرباره مس و مسباره مات</h2>
+    <ul class="col-11 col-md-8 m-auto" style="list-style: none !important">
+      <li class="BenefitsLI">سرعت تمیز کردن بسیار بالا</li>
+      <li class="BenefitsLI">ایجاد گرد و غبار بسیار کم</li>
+      <li class="BenefitsLI">مصرف ساینده کمتر</li>
+      <li class="BenefitsLI">قابلیت بازیافت و محافظت از محیط زیست</li>
+      <p>
+        بدلیل چگالی بالای آن به هنگام استفاده و سندبلاست کردن، ذرات ناشی از
+        سندبلاست بصورت ریز دانه و در مش‌های پایین‌تر توسط فیلتراسیون‌های
+        استاندارد براحتی قابلیت بازیافت و حمل آن از محیط زیست می‌باشد.
+      </p>
+      <li class="BenefitsLI">
+        قابلیت استفاده مجدد و توجیه اقتصادی استفاده از مسباره مات
+      </li>
+      <p>
+        چگالی بالای آن و استحکام مناسب این مزیت و برتری را به مسباره مات
+        می‌دهد که دو مرتبه با مخلوط آن با سایزهای درشت‌تر می‌توان از آن
+        استفاده کرد.
+      </p>
+      <li class="BenefitsLI">
+        <a href="index.html#free-silica-under-1"
+          title="سیلیکای آزاد کمتر از 1 درصد در مسباره، کاهش خطرات سیلیکوسیس و سرطان ریه">
+          کاهش خطرات سیلیکوسیس و سرطان ریه با سیلیکای آزاد کمتر از 1 درصد در
+          مسباره
+        </a>
+      </li>
+      <p>
+        بدلیل چگالی بالا و ایجاد گرد و غبار کم و سنگین بودن ذرات، پس از
+        سندبلاست ذرات براحتی توسط هوا در محیط کار منتشر نمی‌شوند و در صورت
+        استفاده از فیلتراسیون مناسب و تجهیزات ایمنی استاندارد، خطرات سیلیکوسیس
+        و سرطان ریه به حداقل می‌رسد.
+      </p>
+    </ul>
+  </section>
+
+  <section class="col-11 col-md-10 m-auto">
+    <h2 class="text-center mb-5">مشخصات فنی و آنالیز شیمیایی مسباره مات</h2>
+    <h4>بر اساس استاندارد مرجع آزمون : ASTM E 1621-21</h4>
+    <p>
+      نتیجه حاصل از آنالیز شیمیایی به وسیله دستگاه XRF بر اساس درصد وزنی عناصر
+      تشکیل دهنده که توسط
+      <a id="linkResearch" href="https://www.razi-center.net/ " target="_blank">مرکز پژوهش متالورژی رازی</a>
+      به شماره پیگیری 1-38169 به شرح زیر است:
+    </p>
+
+    <h2 class="text-center mb-5">
+      مشخصات فنی و آنالیز شیمیایی مسباره مات بر اساس استاندارد ASTM E 1621-21
+    </h2>
+    <h4>آنالیز شیمیایی و مشخصات فنی مسباره مات با دستگاه XRF</h4>
+    <p>
+      نتیجه حاصل از آنالیز شیمیایی به وسیله دستگاه XRF بر اساس درصد وزنی عناصر
+      تشکیل دهنده که توسط
+      <a id="linkResearch" href="https://www.razi-center.net/" target="_blank"
+        title="مرکز پژوهش متالورژی رازی - آنالیز شیمیایی و مشخصات فنی مسباره مات">
+        مرکز پژوهش متالورژی رازی
+      </a>
+      به شماره پیگیری 1-38169 به شرح زیر است:
+    </p>
+
+    <table class="table text-center d-none d-md-block w-100">
+      <thead>
+        <tr>
+          <th class="tableColor">درصد وزنی</th>
+          <th class="tableColor">اکسید</th>
+          <th>درصد وزنی</th>
+          <th>اکسید</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tableColor">32.84</td>
+          <td class="tableColor">SiO2</td>
+          <td>11.76</td>
+          <td>Al2O3</td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th>درصد وزنی</th>
+          <th>اکسید</th>
+          <th class="tableColor">درصد وزنی</th>
+          <th class="tableColor">اکسید</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>5.93</td>
+          <td>MgO</td>
+          <td class="tableColor">2.58</td>
+          <td class="tableColor">Na2O</td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th class="tableColor">درصد وزنی</th>
+          <th class="tableColor">اکسید</th>
+          <th>درصد وزنی</th>
+          <th>اکسید</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tableColor">12.21</td>
+          <td class="tableColor">CaO</td>
+          <td>1.01</td>
+          <td>K2O</td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th>درصد وزنی</th>
+          <th>اکسید</th>
+          <th class="tableColor">درصد وزنی</th>
+          <th class="tableColor">اکسید</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>0.88</td>
+          <td>SO3</td>
+          <td class="tableColor">0.34</td>
+          <td class="tableColor">P2O5</td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th class="tableColor">درصد وزنی</th>
+          <th class="tableColor">اکسید</th>
+          <th>درصد وزنی</th>
+          <th>اکسید</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tableColor">23.34</td>
+          <td class="tableColor">Fe2O3</td>
+          <td>0.31</td>
+          <td>MnO</td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th>درصد وزنی</th>
+          <th>اکسید</th>
+          <th class="tableColor">درصد وزنی</th>
+          <th class="tableColor">اکسید</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>0.67</td>
+          <td>Cr2O3</td>
+          <td class="tableColor">0.53</td>
+          <td class="tableColor">TiO2</td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th class="tableColor">درصد وزنی</th>
+          <th class="tableColor">اکسید</th>
+          <th>درصد وزنی</th>
+          <th>اکسید</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tableColor">0.3</td>
+          <td class="tableColor">BaO</td>
+          <td>6.12</td>
+          <td>ZnO</td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th>درصد وزنی</th>
+          <th>اکسید</th>
+          <th class="tableColor">درصد وزنی</th>
+          <th class="tableColor">اکسید</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>0.83</td>
+          <td>CuO</td>
+          <td class="tableColor">0.11</td>
+          <td class="tableColor">NiO</td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th class="tableColor">درصد وزنی</th>
+          <th class="tableColor">اکسید</th>
+          <th>درصد وزنی</th>
+          <th>اکسید</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tableColor">0.0</td>
+          <td class="tableColor">L.O.I</td>
+          <td>0.24</td>
+          <td>PbO</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="table text-center d-md-none w-100">
+      <thead>
+        <tr>
+          <th>درصد وزنی</th>
+          <th>اکسید</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tableColor">32.84</td>
+          <td class="tableColor">SiO2</td>
+        </tr>
+        <tr>
+          <td>11.76</td>
+          <td>Al2O3</td>
+        </tr>
+        <tr>
+          <td class="tableColor">5.93</td>
+          <td class="tableColor">MgO</td>
+        </tr>
+        <tr>
+          <td>2.58</td>
+          <td>Na2O</td>
+        </tr>
+        <tr>
+          <td class="tableColor">12.21</td>
+          <td class="tableColor">CaO</td>
+        </tr>
+        <tr>
+          <td>1.01</td>
+          <td>K2O</td>
+        </tr>
+        <tr>
+          <td class="tableColor">0.88</td>
+          <td class="tableColor">SO3</td>
+        </tr>
+        <tr>
+          <td>0.34</td>
+          <td>P2O5</td>
+        </tr>
+        <tr>
+          <td class="tableColor">23.34</td>
+          <td class="tableColor">Fe2O3</td>
+        </tr>
+        <tr>
+          <td>0.31</td>
+          <td>MnO</td>
+        </tr>
+        <tr>
+          <td class="tableColor">0.67</td>
+          <td class="tableColor">Cr2O3</td>
+        </tr>
+        <tr>
+          <td>0.53</td>
+          <td>TiO2</td>
+        </tr>
+        <tr>
+          <td class="tableColor">0.3</td>
+          <td class="tableColor">BaO</td>
+        </tr>
+        <tr>
+          <td>6.12</td>
+          <td>ZnO</td>
+        </tr>
+        <tr>
+          <td class="tableColor">0.83</td>
+          <td class="tableColor">CuO</td>
+        </tr>
+        <tr>
+          <td>0.11</td>
+          <td>NiO</td>
+        </tr>
+        <tr>
+          <td class="tableColor">0.0</td>
+          <td class="tableColor">L.O.I</td>
+        </tr>
+        <tr>
+          <td>0.24</td>
+          <td>PbO</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </section>
+  <section class="col-11 col-md-10 m-auto">
+    <h2 class="text-center mt-5 mb-4">مشخصات فیزیکی مسباره مات</h2>
+    <h4 class="mb-3">
+      بر اساس استاندارد مرجع آزمون : ISO 11126-10(2017) , SSPC AB1(2019)
+    </h4>
+    <table class="table text-center d-none d-md-block w-100">
+      <thead>
+        <tr>
+          <th class="tableColor">نتیجه آزمون</th>
+          <th class="tableColor">استاندارد مرجع</th>
+          <th class="tableColor">رنج استاندارد</th>
+          <th class="tableColor">نام آزمون</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tableColor">92.7 ms/m</td>
+          <td class="tableColor">ISO 11127-6(2022)</td>
+          <td class="tableColor">1000 ></td>
+          <td class="tableColor">Conductivity of Aqueous Extract</td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th>نتیجه آزمون</th>
+          <th>استاندارد مرجع</th>
+          <th>رنج استاندارد</th>
+          <th>نام آزمون</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>0.1 ></td>
+          <td>ISO 11127-5(2020)</td>
+          <td>0.5 ></td>
+          <td>Moisture</td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th class="tableColor">نتیجه آزمون</th>
+          <th class="tableColor">استاندارد مرجع</th>
+          <th class="tableColor">رنج استاندارد</th>
+          <th class="tableColor">نام آزمون</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tableColor">kg/m3 (3.30+-0.05)*1000</td>
+          <td class="tableColor">ISO 11127-3(2012)</td>
+          <td class="tableColor">2.5</td>
+          <td class="tableColor">density</td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th>نتیجه آزمون</th>
+          <th>استاندارد مرجع</th>
+          <th>رنج استاندارد</th>
+          <th>نام آزمون</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Nill</td>
+          <td>ASTM D 7393 2016 (Reapproved 2020)</td>
+          <td>Nill</td>
+          <td>Indicating Oil</td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th class="tableColor">نتیجه آزمون</th>
+          <th class="tableColor">استاندارد مرجع</th>
+          <th class="tableColor">رنج استاندارد</th>
+          <th class="tableColor">نام آزمون</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tableColor">6 Mohs</td>
+          <td class="tableColor">BS EN ISO 11127-4 (2012)</td>
+          <td class="tableColor">6</td>
+          <td class="tableColor">Hardness</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="table text-center d-md-none w-100">
+      <thead>
+        <tr>
+          <th>نتیجه آزمون</th>
+          <th>استاندارد مرجع</th>
+          <th>رنج استاندارد</th>
+          <th>نام آزمون</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tableColor">92.7 ms/m</td>
+          <td class="tableColor">ISO 11127-6(2022)</td>
+          <td class="tableColor">1000 ></td>
+          <td class="tableColor">Conductivity of Aqueous Extract</td>
+        </tr>
+        <tr>
+          <td>0.1 ></td>
+          <td>ISO 11127-5(2020)</td>
+          <td>0.5 ></td>
+          <td>Moisture</td>
+        </tr>
+        <tr>
+          <td class="tableColor">kg/m3 (3.30±0.05)*1000</td>
+          <td class="tableColor">ISO 11127-3(2012)</td>
+          <td class="tableColor">2.5</td>
+          <td class="tableColor">Density</td>
+        </tr>
+        <tr>
+          <td>Nill</td>
+          <td>ASTM D 7393 2016 (Reapproved 2020)</td>
+          <td>Nill</td>
+          <td>Indicating Oil</td>
+        </tr>
+        <tr>
+          <td class="tableColor">6 Mohs</td>
+          <td class="tableColor">BS EN ISO 11127-4 (2012)</td>
+          <td class="tableColor">6</td>
+          <td class="tableColor">Hardness</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <footer>
+    <div class="row">
+      <h2 class="mb-3">با ما در تماس باشید</h2>
+      <div class="col-sm-11 m-auto">
+        <div class="card FooterCard">
+          <div class="card-body">
+            <h3>اطلاعات تماس</h3>
+            <p class="">
+              <strong>آدرس:</strong> ایران , تهران , فلکه دوم صادقیه , بلوار
+              فردوس شرق , خیابان مالکی جنوبی , کوچه نیلوفر غربی , پلاک 10 ,
+              طبقه سوم , واحد 6
+            </p>
+            <p><strong>شناسه ملی شرکت :</strong> 14002915507 </p>
+            <p class=""><strong>کد پستی:</strong> 1481736356</p>
+            <hr class="hr" />
+            <div class="d-flex flex-row-reverse flex-wrap justify-content-center gap-3">
+              <a href="tel:+982144955587" class="d-flex justify-content-center gap-2 text-black-50 PhoneHover">
+                <p>+98 2144 9555 87</p>
+                <strong>:شماره تماس <i class="ri-phone-line"></i> </strong>
+              </a>
+              <a href="tel:+989122023991" class="d-flex justify-content-center gap-2 text-black-50 PhoneHover">
+                <p>+98 912 2023 991</p>
+                <strong>:شماره همراه <i class="ri-smartphone-line"></i></strong>
+              </a>
+              <a href="https://wa.me/+989122023991"
+                class="d-flex justify-content-center gap-2 text-black-50 PhoneHover">
+                <p>+98 912 2023 991</p>
+                <strong>: واتس اپ <i class="ri-whatsapp-line"></i></strong>
+              </a>
+              <a href="mailto:mohsenajouri@gmail.com"
+                class="d-flex justify-content-center gap-2 text-black-50 PhoneHover">
+                <p>mohsenajouri@gmail.com</p>
+                <strong>: ایمیل <i class="ri-mail-line"></i></strong>
+              </a>
+            </div>
+            <hr class="hr" />
+            <h4>مارو در فضای مجازی دنبال کنید</h4>
+            <div class="social__icons">
+              <a href="#" class="social__icon">
+                <i class="ri-facebook-fill"></i>
+              </a>
+              <a href="#" class="social__icon">
+                <i class="ri-instagram-fill"></i>
+              </a>
+              <a href="#" class="social__icon">
+                <i class="ri-twitter-fill"></i>
+              </a>
+              <a href="#" class="social__icon">
+                <i class="ri-linkedin-fill"></i>
+              </a>
+              <a href="#" class="social__icon">
+                <i class="ri-telegram-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function toggleHeader() {
+      const headerMobile = document.querySelector(".headerMobile");
+      const headerDesktop = document.querySelector(".headerDesktop");
+
+      if (window.innerWidth <= 1000) {
+        headerMobile.style.display = "flex";
+        headerDesktop.style.display = "none";
+      } else {
+        headerMobile.style.display = "none";
+        headerDesktop.style.display = "block";
+      }
+    }
+
+    window.addEventListener("resize", toggleHeader);
+
+    window.addEventListener("DOMContentLoaded", toggleHeader);
+
+    const menuToggle = document.getElementById("menuToggle");
+    const closeMenu = document.getElementById("closeMenu");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuToggle.addEventListener("click", () => {
+      mobileMenu.classList.add("open");
+      closeMenu.style.display = "block";
+    });
+
+    closeMenu.addEventListener("click", () => {
+      closeMenuHandler();
+    });
+
+    document.addEventListener("click", (event) => {
+      if (
+        !mobileMenu.contains(event.target) &&
+        !menuToggle.contains(event.target)
+      ) {
+        closeMenuHandler();
+      }
+    });
+
+    function closeMenuHandler() {
+      mobileMenu.classList.remove("open");
+      closeMenu.style.display = "none";
+      menuToggle.style.display = "block";
+    }
+
+    function toggleSubmenu(button) {
+      const submenu = button.nextElementSibling;
+      if (submenu) {
+        submenu.classList.toggle("open");
+      }
+    }
+  </script>
+
+  <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "ImageObject",
+        "url": "./images/matte-abrasive-blasting-media.jpg",
+        "description": "High-quality matte abrasive used in sandblasting",
+        "contentUrl": "./images/matte-abrasive-blasting-media.jpg"
+      },
+      {
+        "@context": "http://schema.org",
+        "@type": "ImageObject",
+        "url": "./images/high-quality-glossy-abrasive.jpg",
+        "description": "High-quality glossy abrasive for fine blasting work",
+        "contentUrl": "./images/high-quality-glossy-abrasive.jpg"
+      },
+      {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "headline": "مسباره مات چیست؟",
+        "description": "مسباره مات حاصل فرآیند ذوب و تغلیظ کوره‌های ریورپ مس سرچشمه می‌باشد.",
+        "author": {
+          "@type": "Person",
+          "name": "Pishgam Sayandeh"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Pishgam Sayandeh",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.pishgamsayandeh.com/logo.png"
+          }
+        },
+        "datePublished": "2025-02-07"
+      },
+      {
+        "@context": "http://schema.org",
+        "@type": "Product",
+        "name": "مسباره مات",
+        "description": "مسباره مات به دلیل چگالی بالا و قابلیت بازیافت، از مهم‌ترین ساینده‌ها برای سندبلاست است. این محصول مزایای زیادی در حفاظت از محیط زیست دارد.",
+        "url": "https://www.pishgamsayandeh.com/benefits-of-matte-abrasive",
+        "productID": "matte-abrasive-001",
+        "brand": {
+          "@type": "Brand",
+          "name": "Pishgam Sayandeh"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "IRR",
+          "price": "تماس بگیرید"
+        }
+      }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+footer {
+  background-color: #3D8DA8;
+  color: whitesmoke;
+  text-align: center;
+  padding:20px;
+  width: 100%;
+  z-index: 100;
+  .FooterCard {
+    direction: ltr;
+    .PhoneHover {
+      transition: color 0.2s;
+      &:hover {
+        color: black !important;
+      }
+    }
+  }
+
+  .social__icon {
+    i {
+      font-size: 25px;
+      margin: 0 5px;
+      color: black;
+    }
+  }
+}

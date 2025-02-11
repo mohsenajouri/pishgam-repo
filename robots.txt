@@ -1,0 +1,18 @@
+# Robots.txt for pishgamsayandeh.com
+
+# Allow all search engines to crawl the entire site
+User-agent: *
+Disallow: /admin/  # Block admin panel or sensitive pages
+Disallow: /login/  # Block login page or irrelevant sections
+
+# Allow search engines to crawl all important HTML pages
+Allow: /index.html  # Allow search engines to index the homepage
+Allow: /matt.html   # Allow search engines to index the matt.html page
+Allow: /baragh.html # Allow search engines to index the baragh.html page
+
+# Block unnecessary or irrelevant content (if needed)
+# Disallow: /images/   # For example, if you don't want crawlers to access image folder
+# Disallow: /*.pdf$    # Block PDF files from being indexed (optional)
+
+# Sitemap location
+Sitemap: https://www.pishgamsayandeh.com/sitemap.xml
